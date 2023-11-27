@@ -19,7 +19,7 @@ You must have knowledge of the rules of hangman!
 
 ## Built With
 
-* [Python](https://www.python.org/)) 
+* [Python](https://www.python.org/)
 
 ## Authors
 
