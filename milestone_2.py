@@ -1,8 +1,17 @@
-# Step 1: Create a list containing the names of your 5 favorite fruits.
-favorite_fruits = ["Apple", "Banana", "Orange", "Grapes", "Mango"]
+def get_user_input():
+    """Prompt user for input and validate it."""
+    user_input = input("Enter a single alphabetical character: ")
+    return user_input
 
-# Step 2: Assign this list to a variable called word_list.
-word_list = favorite_fruits
+def validate_user_input(user_input):
+    """Validate user input."""
+    return len(user_input) == 1 and user_input.isalpha()
 
-# Step 3: Print out the newly created list to the standard output (screen).
-print("Word List:", word_list)
+def provide_feedback(is_valid):
+    """Provide feedback based on the validation result."""
+    if is_valid:
+        print("Good guess!")
+    else:
+        print("Oops! That is not a valid input.")
+
+
