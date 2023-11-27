@@ -25,8 +25,6 @@ You must have knowledge of the rules of hangman!
 
 * **Dean Foulds** - *First coding study assignment* - [Dean-Foulds](https://github.com/Dean-Foulds)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
