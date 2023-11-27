@@ -33,3 +33,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 AiCore Training
 
+[![Anurag’s github stats](https://github-readme-stats.vercel.app/api?username=Dean-Foulds)](https://github.com/Dean-Foulds)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Dean-Foulds&layout=compact)](https://github.com/Dean-Foulds)
+
