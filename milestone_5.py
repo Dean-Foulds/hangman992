@@ -54,16 +54,24 @@ class Hangman:
 
     def play_game(self):
         """Main function to play the Hangman game."""
-        while self._num_lives > 0 and self._num_letters > 0:
-            self.ask_for_guess()
-            self.check_guess(self._list_of_guesses[-1])
+        while True:
+            if self._num_lives == 0:
+                print("You lost!")
+                break
+            elif self._num_letters > 0:
+                self.ask_for_guess()
+                self.check_guess(self._list_of_guesses[-1])
+            else:
+                print("Congratulations. You won the game!")
+                break
 
-        if self._num_letters == 0:
-            print(f"Congratulations! You guessed the word: {''.join(self._word_guessed)}")
-        else:
-            print(f"Sorry, you ran out of lives. The correct word was: {self._word}")
+# Outside the function, call your play_game function to play your game.
+def play_game(word_list):
+    num_lives = 5
+    game = Hangman(word_list, num_lives)
+    game.play_game()
 
-# Testing the Hangman class
+# Testing the class
 if __name__ == "__main__":
-    hangman_game = Hangman(word_list=["apple", "banana", "orange", "grapes", "watermelon"])
-    hangman_game.play_game()
+    word_list = ["apple", "banana", "orange", "grapes", "watermelon"]
+    play_game(word_list)
